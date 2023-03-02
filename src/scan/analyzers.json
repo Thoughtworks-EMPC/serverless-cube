@@ -1,0 +1,31 @@
+[
+  {
+    "gcpServiceName": "@google-cloud/firestore",
+    "aliEquivalentServiceName": "@tw-cloud/sc/adaptors/firestore/mongodb"
+  },
+  {
+    "gcpServiceName": "@google-cloud/secret-manager",
+    "aliEquivalentServiceName": "@tw-cloud/sc/alikms"
+  },
+  {
+    "gcpServiceName": "firebase-admin",
+    "matcher": "firebase-admin(?!/firestore)",
+    "aliEquivalentServiceName": "@tw-cloud/sc/firebaseToRedis"
+  },
+  {
+    "gcpServiceName": "firebase-admin/firestore",
+    "aliEquivalentServiceName": "@tw-cloud/sc/firestoreToMongo"
+  },
+  {
+    "gcpServiceName": "@google-cloud/logging",
+    "aliEquivalentServiceName": "@tw-cloud/sc/logging"
+  },
+  {
+    "gcpServiceName": "@google-cloud/trace-agent",
+    "aliEquivalentServiceName": "@tw-cloud/sc/alitracinganalysis"
+  },
+  {
+    "gcpServiceName": "apollo-server-plugin-cloud-trace",
+    "aliEquivalentServiceName": "@tw-cloud/sc/alitracinganalysis/openTracingPlugin"
+  }
+]
